@@ -11,6 +11,9 @@ function calc(a, b, op) {
         case "div":
             return a / b;
         case "mod":
+            return a % b;
+        default:
+            return -1;
     }
 }
 const res = calc(8, 2, "mul");
