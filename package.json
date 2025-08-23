@@ -1,0 +1,19 @@
+{
+  "name": "projecttwo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "test": "ts-node src/helloWorld.ts",
+  "dev": "ts-node src/helloWorld.ts",
+    "calc": "ts-node src/simpleCalc.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
