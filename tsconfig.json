@@ -7,12 +7,12 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "commonjs",
+    "module": "ESNext",                 // Alterado de commonjs para ESNext
     "target": "es2020",
     "types": [],
     // For nodejs:
-    // "lib": ["esnext"],
-    // "types": ["node"],
+    "lib": ["esnext"],                  // Descomentado para suporte completo a ESNext
+    "types": ["node"],                  // Descomentado para poder usar node types (ex: crypto)
     // and npm install -D @types/node
 
     // Other Outputs
@@ -35,13 +35,13 @@
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,      // Alterado de true para false
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
 
     "esModuleInterop": true,
-    "moduleResolution": "node10",
+    "moduleResolution": "node"          // Alterado de node10 para node
   }
 }
