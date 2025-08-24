@@ -9,7 +9,6 @@
     // See also https://aka.ms/tsconfig/module
     "module": "ESNext",                 // Alterado de commonjs para ESNext
     "target": "es2020",
-    "types": [],
     // For nodejs:
     "lib": ["esnext"],                  // Descomentado para suporte completo a ESNext
     "types": ["node"],                  // Descomentado para poder usar node types (ex: crypto)
