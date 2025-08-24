@@ -5,8 +5,9 @@ const appOutput = document.getElementById('app-output') as HTMLElement;
 
 // Get a reference to the button. We use querySelector for class-based selection.
 // We also tell TypeScript this is specifically a button element for better type safety.
-const actionButton = document.querySelector('.action-button') as HTMLButtonElement;
-
+const actionButton = document.querySelector(
+  '.action-button'
+) as HTMLButtonElement;
 
 // --- Functions ---
 /**
@@ -21,7 +22,6 @@ function updateOutput(message: string): void {
     console.error('Error: The "app-output" element was not found in the DOM.');
   }
 }
-
 
 // --- Main Logic ---
 /**
@@ -39,7 +39,9 @@ function initializeApp(): void {
       updateOutput('🎉 You clicked the button! Great job!');
     });
   } else {
-    console.error('Error: The "action-button" element was not found in the DOM.');
+    console.error(
+      'Error: The "action-button" element was not found in the DOM.'
+    );
   }
 }
 
