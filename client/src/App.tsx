@@ -1,24 +1,19 @@
 import { useEffect, useState } from 'react'
-
+import React from "react";
 import './App.css'
+import { Header } from './components/Header';
+import { Navbar } from './components/Navbar';
 
 
 
 function App() {
-  const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    fetch("http://localhost:3001/")
-    .then(res => res.text())
-    .then(data => setMessage(data));
-  }, []);
-
 
   return (
     <div>
-      <h1>Landing Page</h1>
-      <p>Resposta do backend: {message}</p>
+      <Header />
+      <Navbar />
     </div>
+
   )
 
 }
